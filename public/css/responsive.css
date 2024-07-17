@@ -1,0 +1,136 @@
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+    .banner_subcont {
+        width: 90% !important;
+        line-height: 15px !important;
+    }
+
+    .banner1_ul li {
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+
+    .top-light-head {
+        line-height: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 389px) {
+    .banner_subcont {
+        width: 90% !important;
+        line-height: 15px !important;
+    }
+
+    .banner1_ul li {
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+
+    .top-light-head {
+        line-height: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 411px) {
+    .banner_subcont {
+        /* width: 90% !important; */
+        line-height: 15px !important;
+        text-wrap:pretty!important;
+    }
+
+    .banner1_ul li {
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+
+    .top-light-head {
+        line-height: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 413px) {
+    .banner_subcont {
+        width: 90% !important;
+        line-height: 15px !important;
+    }
+
+    .banner1_ul li {
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+
+    .top-light-head {
+        line-height: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 429px) {
+    .banner_subcont {
+        width: 90% !important;
+        line-height: 15px !important;
+    }
+
+    .banner1_ul li {
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+
+    .top-light-head {
+        line-height: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 477px) {
+    .banner_subcont {
+        width: 90% !important;
+        line-height: 15px !important;
+    }
+
+    .banner1_ul li {
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+
+    .top-light-head {
+        line-height: 0 !important;
+    }
+}
+
+
+@media only screen and (min-width : 478px) and (max-width: 767px) {
+    .tp-caption.dark-light-100 {
+        line-height: 0;
+    }
+
+    .tp-caption.dark-black-100 {
+        line-height: 0;
+    }
+
+    /* .banner_subcont {
+        top: 445px !important;
+        line-height: 20px !important;
+        margin-bottom: 0 !important; 
+    } */
+
+    .banner1_ul {
+        position: relative;
+        top: -17px;
+        left: 14px;
+    }
+
+    .banner1_ul li {
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+
+    .top-light-head {
+        line-height: 0 !important;
+    }
+}
+
+@media only screen and (min-width : 769px) and (max-width: 1024px) {
+
+    .logo-img{
+        height: 42px;
+        width: unset !important;
+    }
+}
