@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>JOAN TECHNOLOGIES</title>
+    <title>Joan Technologies</title>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="HTML5 Template">
@@ -51,657 +51,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: "CabinetGrotesk-light";
-            src: url("http://lucasroussy.com/fonts/cabinet-grotesk/CabinetGrotesk-Light.woff2") format("woff2");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "CabinetGrotesk-extrabold";
-            src: url("assets/fonts/cabinet-grotesk/CabinetGrotesk-Extrabold.woff2") format("woff2");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        .bigTitle {
-            font-family: 'Lato', Arial, Helvetica, sans-serif;
-            line-height: 0.9;
-            font-size: 30px;
-            color: #4b4e53;
-            font-weight: 800;
-        }
-
-        .text-container h4 {
-
-              font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            color: #4b4e53;
-            font-size: 21px;
-            line-height: 30px;
-        }
-
-        @media (min-width: 425px) {
-            .bigTitle {
-                font-size: 15px;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .bigTitle {
-                font-size: 20px;
-            }
-        }
-
-
-        .arrow-button {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            font-family: "CabinetGrotesk-extrabold", sans-serif;
-            color: #000;
-            transition: padding 1s cubic-bezier(0.16, 1, 0.3, 1);
-            width: fit-content;
-            font-size: 12px;
-        }
-
-        .arrow-button svg {
-            width: 33px;
-            margin-left: 10px;
-        }
-
-        .arrow-button svg circle {
-            transition: fill 0.75s ease;
-            fill: transparent;
-        }
-
-        @media (min-width: 425px) {
-            .arrow-button {
-                font-size: 16px;
-            }
-
-            .arrow-button svg {
-                width: 45px;
-            }
-
-        }
-
-        @media (max-width: 1024px) {
-            .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide {
-                height: 100vh !important;
-            }
-        }
-
-        @media (max-width: 991px) {
-
-            .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide {
-
-                height: 45vh !important;
-            }
-
-        }
-
-        @media (max-width: 460px) {
-
-            .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide {
-
-                height: 100vh !important;
-            }
-
-            .bigTitle {
-                font-size: 18px;
-            }
-
-            .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image {
-
-                background-position: unset !important;
-            }
-        }
-
-
-        @media (min-width: 1024px) {
-            .arrow-button {
-                font-size: 20px;
-            }
-
-            .arrow-button svg {
-                width: 62px;
-            }
-
-        }
-
-        @media (min-width: 1440px) {
-            .arrow-button {
-                font-size: 15px;
-            }
-
-            .arrow-button svg {
-                width: 60px;
-            }
-        }
-
-        @media (min-width: 1920px) {
-            .arrow-button {
-                font-size: 18px;
-            }
-
-            .arrow-button svg {
-                width: 70px;
-            }
-        }
-        .banner_ull{
-            margin-left:-15px;
-        }
-
-        .home-showcase {
-            padding: 0 var(--columnExt) 0;
-            position: relative;
-        }
-
-        .home-showcase .home-showcaseSlider {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image {
-            /* padding: 5vw; */
-            /* width: calc(100% - (5vw*2));
-            height: calc(100% - (5vw*2)); */
-            width: 100%;
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .text-container {
-            max-width: 100%;
-            margin: 0 0 5rem;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .text-container .bigTitle {
-            transform: translate(-140%, 0);
-            transition: transform 1.15s cubic-bezier(0.58, 0, 0.28, 0.99) 0.4s;
-            color: #4b4e53;
-
-            margin: 0 0 2.5rem;
-            text-shadow: #21212121 0px 0px 5px;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .text-container .container-arrow-button {
-            transform: translate(-160%, 0);
-            transition: transform 0.6s cubic-bezier(0.58, 0, 0.28, 0.99) 1s;
-            width: fit-content;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .text-container .container-arrow-button .arrow-button {
-            color: black;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .text-container .container-arrow-button svg path {
-            fill: #f8f5f0;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .text-container .container-arrow-button svg circle {
-            stroke: #f8f5f0;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .text-container .container-arrow-button:hover svg circle {
-            stroke: #f8f5f0;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .filter {
-            width: 100%;
-            height: 100%;
-            background-color: #f8f5f0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 0.5;
-            transition: opacity 0.8s ease-in 0.5s;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide-active .swiper-image .text-container .bigTitle,
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide-active .swiper-image .text-container .container-arrow-button {
-            transform: translate(0, 0);
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide-active .swiper-image .filter {
-            opacity: 0;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-pagination {
-            position: relative;
-            bottom: 0;
-            left: 0;
-            width: fit-content;
-            padding: 3.5% 0;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-pagination-bullet {
-            width: 4vw;
-            border-radius: 50px;
-            height: 2px;
-            background-color: #8f9397;
-            opacity: 1;
-            transition: width 0.8s ease-in-out, 0.4s ease-in-out;
-            margin: 0 4px !important;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-pagination-bullet-active {
-            background-color: #f7970e;
-            width: 8vw;
-        }
-
-        .home-showcase .home-showcaseSlider .showcaseSlider-nav {
-            display: flex;
-            flex-direction: row;
-            padding: 0 0 3.5% 5%;
-            padding-right: 0;
-        }
-
-        .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-prev,
-        .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-next {
-            position: static;
-            display: flex;
-            align-items: flex-end;
-            font-weight: 900;
-            margin: 0 2vw;
-            width: 20px;
-            height: auto;
-        }
-
-        .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-prev.swiper-button-disabled,
-        .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-next.swiper-button-disabled {
-            opacity: 1;
-        }
-
-        .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-prev.swiper-button-disabled:after,
-        .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-next.swiper-button-disabled:after {
-            color: #8f9397;
-        }
-
-        .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-prev::after,
-        .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-next::after {
-            font-size: 4vw;
-            color: #f7970e;
-        }
-
-        .home-showcase .home-showcaseSlider #macaron {
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 1;
-            margin: 5%;
-            width: 30%;
-        }
-
-        .home-showcase .home-showcaseSlider #macaron #text-circle {
-            animation: rotate-360 12s linear 0s infinite reverse forwards;
-            transform-origin: center;
-        }
-
-        .home-showcase .scrollSliderButton {
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transform: translate(-50%, 0%);
-            color: #fff !important;
-            text-decoration: none;
-            font-size: 3.5vw;
-            height: 21vw;
-            font-family: "CabinetGrotesk-light", sans-serif;
-        }
-
-        .home-showcase .scrollSliderButton .line {
-            height: 15vw;
-            width: 1px;
-            background: #8c97d0;
-            margin-top: 5px;
-            animation: scroll-anim-mobile 1.6s cubic-bezier(0.62, 0.01, 0.71, 0.47) 0s infinite normal forwards;
-        }
-
-
-        /* .swiper4 {
-            background-image: url(/images/ban2.png);
-        }
-
-        .swiper3 {
-            background-image: url(/images/ban3.png);
-        }
-
-        .swiper2 {
-            background-image: url(/images/ban4.png);
-        }
-
-        .swiper1 {
-            background-image: url(/images/ban1.png);
-        } */
-
-        .slider-img img {
-            width: 100%;
-        }
-
-        .text-container h1 {
-            margin: 3px;
-        }
-
-        .first1 {
-            color: #4b4e53;
-            font-family: 'Lato', Arial, Helvetica, sans-serif;
-            font-size: 50px !important;
-            line-height: 80px;
-            font-weight: 300;
-            margin: 0;
-        }
-
-        .secound1 {
-            color: #4b4e53;
-            font-family: 'Lato', Arial, Helvetica, sans-serif;
-            font-size: 50px !important;
-            line-height: 30px;
-            font-weight: 900;
-            margin: 0;
-        }
-
-        .banner_ull li {
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-weight: normal;
-            font-size: 21px;
-            line-height: 35px;
-            color: #7e8082;
-        }
-
-        .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image {
-            padding: 20px 110px;
-        }
-
-        @media (min-width: 1024px) {
-
-            .home-showcase .home-showcaseSlider {
-                display: block;
-            }
-
-
-
-            .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image {
-                align-items: center;
-            }
-
-            .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .text-container {
-                max-width: 75%;
-                margin: 0;
-            }
-
-            .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .text-container .bigTitle {
-                margin: 0 0 1.25rem;
-            }
-
-            .home-showcase .home-showcaseSlider .swiper-pagination {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                padding: 0 0 2.5% 5%;
-            }
-
-            .home-showcase .home-showcaseSlider .swiper-pagination-bullet {
-                width: 1.5vw;
-                height: 3px;
-                margin: 0 8px !important;
-            }
-
-            .home-showcase .home-showcaseSlider .swiper-pagination-bullet-active {
-                width: 3vw;
-            }
-
-            .home-showcase .home-showcaseSlider .showcaseSlider-nav {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                z-index: 1;
-                padding: 0 5% 2.5% 5%;
-            }
-
-            .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-prev,
-            .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-next {
-                margin: 0 0.6vw;
-            }
-
-            .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-prev::after,
-            .home-showcase .home-showcaseSlider .showcaseSlider-nav .showcaseSlider-next::after {
-                font-size: 1vw;
-            }
-
-            .home-showcase .home-showcaseSlider #macaron {
-                width: fit-content;
-                width: 8.4vw;
-            }
-
-            .home-showcase .scrollSliderButton {
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-                z-index: 2;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                transform: translate(-50%, 40%);
-                color: #fff !important;
-                text-decoration: none;
-                font-size: 0.9vw;
-                height: 4.8vw;
-                font-family: "CabinetGrotesk-light", sans-serif;
-            }
-
-            .home-showcase .scrollSliderButton .line {
-                height: 4.8vw;
-                width: 2px;
-                background: #8c97d0;
-                margin-top: 5px;
-                animation: scroll-anim 1.6s cubic-bezier(0.62, 0.01, 0.71, 0.47) 0s infinite normal forwards;
-            }
-        }
-
-        @media only screen and (max-width: 860px) {
-            .home-showcase .home-showcaseSlider .showcaseSlider-nav {
-                position: relative;
-                bottom: 70px;
-            }
-
-            .home-showcase .home-showcaseSlider .swiper-pagination {
-                bottom: 70px;
-            }
-
-            .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image {
-                padding: 2vh 5vw;
-            }
-        }
-
-     @media only screen and (max-width: 1024px) {
-         .first1 {
-
-    font-size: 35px !important;
-         }
-         
-         .secound1 {
-    font-size: 35px !important;
-         }
-     }
-
-        @media only screen and (max-width: 560px) {
-            .slider-img img {
-  display: none;
-}
-/*.swiper1{*/
-/*        margin-top: 100px;*/
-/*}*/
-/*.swiper2{*/
-/*        margin-top: 100px;*/
-/*}*/
-/*    .swiper3{*/
-/*        margin-top: 100px;*/
-/*}*/
-/*    .swiper4{*/
-/*        margin-top: 100px;*/
-/*}*/
-    
-            .swiper1::before {
-                
-                
-                /*background-image: url(/images/bgai.webp);*/
-                
-                
-                
-                 /*background-image: url(/images/newa1.webp);*/
-                background-repeat: no-repeat;
-                content: "";
-                background-attachment: fixed;
-                position: absolute;
-                background-position: center;
-                 background-size: 100%; 
-                height: 100vh;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                opacity: 0.09;
-            }
-
-            .swiper2::before {
-                /*background-image: url(/images/cloud.svg);*/
-                     /*background-image: url(/images/cnew.webp);*/
-                background-repeat: no-repeat;
-                content: "";
-                background-attachment: fixed;
-                position: absolute;
-                background-position: center;
-                /* background-size: 100% 100%; */
-                height: 100vh;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                opacity: 0.09;
-            }
-
-            .swiper3::before {
-                /*background-image: url(/images/data2.svg);*/
-                  /*background-image: url(/images/newdata.webp);*/
-                background-repeat: no-repeat;
-                content: "";
-                background-attachment: fixed;
-                position: absolute;
-                background-position: center;
-                /* background-size: 100% 100%; */
-                height: 100vh;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                opacity: 0.09;
-            }
-
-            .swiper4::before {
-                /*background-image: url(/images/cyber.svg);*/
-                   /*background-image: url(/images/newwcyber.webp);*/
-                background-repeat: no-repeat;
-                content: "";
-                background-attachment: fixed;
-                position: absolute;
-                background-position: center;
-                /* background-size: 100% 100%; */
-                height: 100vh;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                opacity: 0.09;
-            }
-
-            .home-showcase {
-                position: relative;
-            }
-
-            .text-container {
-                position: absolute;
-                top: 10%;
-            }
-
-            .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide .swiper-image .text-container .bigTitle {
-                margin: 5px !important;
-                line-height: 1.9;
-            }
-        }
-
-
-        @media (max-width: 479px) {
-            .bigTitle {
-                font-size: 34px !important;
-                line-height: 50px;
-            }
-
-            .banner_ull li {
-                font-size: 17px !important;
-            }
-        }
-        @media (max-width:1150px) {
-        .slider-img img {
-    width: 620px;
-}
-        }
-
-        @media (min-width: 576px) and (max-width: 768px) {
-            .bigTitle {
-                font-size: 27px !important;
-                line-height: 25px !important;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 991px) {
-            .bigTitle {
-                font-size: 30px !important;
-                line-height: 30px !important;
-            }
-        }
-
-        @media (min-width: 760px) and (max-width: 1024px) {
-            .home-showcase .home-showcaseSlider .swiper-wrapper .swiper-slide {
-                height: 50vh !important;
-            }
-        }
-
- 
-
-        @media (min-width: 576px) and (max-width: 768px) {
-            .text-container h4 {
-                max-width: 100%;
-                font-size: 21px;
-                margin: 10px 0;
-                line-height: 30px;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <div id="wrap" class="boxed ">
-        <div class="grey-bg"> <!-- Grey BG  -->
+        <div class="grey-bg">
             <!-- HEADER -->
             <header id="nav" class="header header-1">
                 <div class="header-wrapper">
@@ -712,7 +66,7 @@
                             <div class="logo-container-2">
                                 <div class="logo-2">
                                     <a href="/" class="clearfix">
-                                        <img src="joan/logo.png" class="logo-img" alt="Logo">
+                                        <img src="joan/logo.webp" class="logo-img" alt="Logo">
                                     </a>
                                 </div>
                             </div>
@@ -764,7 +118,6 @@
                                     <!-- MAIN MENU LIST -->
                                     <nav class="collapse collapsing navbar-collapse right-1024">
                                         <ul id="nav-onepage" class="nav navbar-nav">
-
                                             <!-- MENU ITEM -->
                                             <li>
                                                 <a href="#index-link" class="top_scroll">
@@ -794,15 +147,13 @@
 
                                             <!-- MENU ITEM -->
                                             <li>
-                                                <a href="#clients_sec" class="clients_scroll">
-                                                    <div class="main-menu-title">CLIENTS</div>
-                                                </a>
-                                            </li>
-
-                                            <!-- MENU ITEM -->
-                                            <li>
                                                 <a href="#contact_sec" class="contact_scroll">
                                                     <div class="main-menu-title">CONTACT</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#contact_sec" class="contact_scroll">
+                                                    <button class="nav-button">Impress Me!</button>
                                                 </a>
                                             </li>
                                         </ul>
@@ -821,139 +172,198 @@
                 <!-- END header-wrapper -->
             </header>
 
-            <section class="home-showcase" style="background: #f8f5f0">
-                <div class="swiper home-showcaseSlider page-section" id="index-link">
+            <section class="home-showcase page-section" style="background: #f8f5f0" id="index-link">
+                <div class="swiper home-showcaseSlider page-section">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide container">
                             <div class="swiper-image row" data-swiper-parallax-x="3%">
-                                <div class="text-container col-lg-6">
+                                <div class="text-container col-lg-7">
                                     <div class="swiper1">
-
-                                    <h1 class="bigTitle first1">Unlocking</h1>
-                                    <h1 class="bigTitle secound1">New Possiblities</h1>
-                                    <div class="container-arrow-button">
-                                        <h4> We can help you
-                                            integrate
-                                            AI and ML into your
-                                            operations,enabling tasks like:</h4>
-                                        <div class="cta arrow-button" href="javascript:void(0)">
-
-                                            <ul class="banner_ull">
-                                                <li class="list11">Automate Complex Tasks</li>
-                                                <li class="list12">Predictive Analystics</li>
-                                                <li class="list13">Enhance Customer Experience</li>
-                                            </ul>
-
+                                        <h1 class="bigTitle first1">Automate Smarter</h1>
+                                        <h1 class="bigTitle secound1">Predict Faster</h1>
+                                        <div class="container-arrow-button">
+                                            <h4> Stay Ahead with AI and machine learning to enhance efficiency and gain
+                                                strategic insights:</h4>
+                                            <div class="cta arrow-button" href="javascript:void(0)">
+                                                <ul class="banner_ull">
+                                                    <li class="list11">Automate complex tasks seamlessly</li>
+                                                    <li class="list12">Utilise predictive analytics for future-ready
+                                                        decisions</li>
+                                                    <li class="list13">Enhance customer experiences with personalised
+                                                        solutions</li>
+                                                </ul>
+                                            </div>
+                                            <div class="slider-btn-sec">
+                                                <a href="#contact_sec" class="contact_scroll">
+                                                    <button class="slider-newbtn">Find Me AI Solutions</button>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                </div>
 
-                                <div class="slider-img col-lg-6">
-                                     <img src="/images/newa1.webp" alt="Slider Product">
+                                <div class="slider-img col-lg-5">
+                                    <img src="/images/c1.png" alt="Slider Product">
                                 </div>
                                 <div class="filter"></div>
                             </div>
                         </div>
-                        <!--<div class="swiper-slide container">-->
-                        <!--    <div class="swiper-image row" data-swiper-parallax-x="3%">-->
-                        <!--        <div class="text-container col-lg-6">-->
-                        <!--            <div class="swiper2">-->
-                        <!--            <h1 class="bigTitle first1">Scalability &</h1>-->
-                        <!--            <h1 class="bigTitle secound1">Agility</h1>-->
-                        <!--            <div class="container-arrow-button">-->
-                        <!--                <div class="cta arrow-button" href="javascript:void(0)">-->
-                        <!--                    <div class="slide-content">-->
-                        <!--                        <h4>Embrace the flexibility-->
-                        <!--                            of-->
-                        <!--                            cloud-based solutions for:</h4>-->
-                        <!--                        <ul class="banner_ull">-->
-                        <!--                            <li class="list11">Enhanced Collaboration</li>-->
-                        <!--                            <li class="list12">Cost Optimization</li>-->
-                        <!--                            <li class="list13">Improved Disaster Recovery</li>-->
-                        <!--                        </ul>-->
-                        <!--                    </div>-->
-                        <!--                </div>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--        </div>-->
-                        <!--        <div class="slider-img col-lg-6"> <img src="/images/cloud.svg" alt="Slider Product">-->
-                        <!--        </div>-->
-                        <!--        <div class="filter"></div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-                        <!--<div class="swiper-slide container">-->
-                        <!--    <div class="swiper-image row" data-swiper-parallax-x="3%">-->
-                        <!--        <div class="text-container col-lg-6">-->
-                        <!--            <div class="swiper3">-->
-                        <!--            <h1 class="bigTitle first1">Transform Data into-->
-                        <!--            </h1>-->
-                        <!--            <h1 class="bigTitle secound1">-->
-                        <!--                Actionable Insights-->
-                        <!--            </h1>-->
-                        <!--            <div class="container-arrow-button">-->
-                        <!--                <div class="cta arrow-button" href="javascript:void(0)">-->
-                        <!--                    <div class="slide-content">-->
+                        <div class="swiper-slide container">
+                            <div class="swiper-image row" data-swiper-parallax-x="3%">
+                                <div class="text-container col-lg-7">
+                                    <div class="swiper2">
+                                        <h1 class="bigTitle first1">Grow Without Limits,</h1>
+                                        <h1 class="bigTitle secound1">Thrive in Any Situation</h1>
+                                        <div class="container-arrow-button">
+                                            <div class="cta arrow-button" href="javascript:void(0)">
+                                                <div class="slide-content">
+                                                    <h4>Embrace cloud technology for flexibility and growth that adapts
+                                                        to your needs:</h4>
+                                                    <ul class="banner_ull">
+                                                        <li class="list11">Boost collaboration with cloud integration
+                                                        </li>
+                                                        <li class="list12">Optimise costs through scalable resources
+                                                        </li>
+                                                        <li class="list13">Ensure business continuity with reliable
+                                                            disaster recovery</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="slider-btn-sec">
+                                                <a href="#contact_sec" class="contact_scroll">
+                                                    <button class="slider-newbtn">Take Me to The Cloud</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-img col-lg-5">
+                                    <img src="/images/c2.png" alt="Slider Product">
+                                </div>
+                                <div class="filter"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide container">
+                            <div class="swiper-image row" data-swiper-parallax-x="3%">
+                                <div class="text-container col-lg-7">
+                                    <div class="swiper3">
+                                        <h1 class="bigTitle first1">See Clearly,
+                                        </h1>
+                                        <h1 class="bigTitle secound1">
+                                            Act Decisively
+                                        </h1>
+                                        <div class="container-arrow-button">
+                                            <div class="cta arrow-button" href="javascript:void(0)">
+                                                <div class="slide-content">
+                                                    <h4>Turn your data into practical insights for smarter decisions:
+                                                    </h4>
+                                                    <ul class="banner_ull">
+                                                        <li class="list11">Visualise data for deeper understanding</li>
+                                                        <li class="list12">Access comprehensive, advanced reporting
+                                                        </li>
+                                                        <li class="list13">Make confident, data-driven decisions</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="slider-btn-sec">
+                                                <a href="#contact_sec" class="contact_scroll">
+                                                    <button class="slider-newbtn">Show Me My Insights</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <!--                        <h4>We can help you harness the power of data:</h4>-->
-                        <!--                        <ul class="banner_ull">-->
-                        <!--                            <li class="list11">Data Visualization</li>-->
-                        <!--                            <li class="list12">Advanced Reporting</li>-->
-                        <!--                            <li class="list13">Informed Decision Making</li>-->
-                        <!--                        </ul>-->
-                        <!--                    </div>-->
-                        <!--                </div>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--        </div>-->
-
-                        <!--        <div class="slider-img col-lg-6"> <img src="/images/data2.svg" alt="Slider Product">-->
-                        <!--        </div>-->
-                        <!--        <div class="filter"></div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-                        <!--<div class="swiper-slide container">-->
-                        <!--    <div class="swiper-image row" data-swiper-parallax-x="3%">-->
-                        <!--        <div class="text-container col-lg-6">-->
-                        <!--            <div class="swiper4">-->
-                        <!--            <h1 class="bigTitle first1">Protecting Your</h1>-->
-                        <!--            <h1 class="bigTitle secound1">Business Assets</h1>-->
-                        <!--            <div class="container-arrow-button">-->
-                        <!--                <div class="cta arrow-button" href="javascript:void(0)">-->
-                        <!--                    <div class="slide-content">-->
-                        <!--                        <h4>We offer-->
-                        <!--                            comprehensive cybersecurity solutions to:</h4>-->
-                        <!--                        <ul class="banner_ull">-->
-                        <!--                            <li class="list11">Safeguard Sensitive Data</li>-->
-                        <!--                            <li class="list12">Combat Cyber Threats</li>-->
-                        <!--                            <li class="list13">Ensure Business Continuity</li>-->
-                        <!--                        </ul>-->
-                        <!--                    </div>-->
-                        <!--                </div>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--        </div>-->
-                        <!--        <div class="slider-img col-lg-6"> <img src="/images/cyber.svg" alt="Slider Product">-->
-                        <!--        </div>-->
-                        <!--        <div class="filter"></div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-
+                                <div class="slider-img col-lg-5">
+                                    <img src="/images/c3.png" alt="Slider Product">
+                                </div>
+                                <div class="filter"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide container">
+                            <div class="swiper-image row" data-swiper-parallax-x="3%">
+                                <div class="text-container col-lg-7">
+                                    <div class="swiper4">
+                                        <h1 class="bigTitle first1">Guard What Matters,</h1>
+                                        <h1 class="bigTitle secound1">Sleep Soundly</h1>
+                                        <div class="container-arrow-button">
+                                            <div class="cta arrow-button" href="javascript:void(0)">
+                                                <div class="slide-content">
+                                                    <h4>Protect your business with comprehensive cybersecurity
+                                                        solutions:</h4>
+                                                    <ul class="banner_ull">
+                                                        <li class="list11">Safeguard sensitive data against breaches
+                                                        </li>
+                                                        <li class="list12">Defend against evolving cyber threats</li>
+                                                        <li class="list13">Maintain business continuity with proactive
+                                                            protection</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="slider-btn-sec">
+                                                <a href="#contact_sec" class="contact_scroll">
+                                                    <button class="slider-newbtn">Strengthen My Security</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-img col-lg-5">
+                                    <img src="/images/c4.png" alt="Slider Product">
+                                </div>
+                                <div class="filter"></div>
+                            </div>
+                        </div>
                     </div>
-
                     <!-- pagination -->
                     <div class="swiper-pagination showcaseSlider-pagination"></div>
-
                     <!-- navigation buttons -->
                     <div class="showcaseSlider-nav">
                         <div class="swiper-button-prev showcaseSlider-prev"></div>
                         <div class="swiper-button-next showcaseSlider-next"></div>
                     </div>
-
                 </div>
             </section>
 
-            <!-- FEATURES 1  Who we are -->
+            <div id="clients_sec" class=" p-30-cont">
+                <div class="container">
+                    {{-- <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-50">
+                                <h2 class="section-title">OUR <span class="bold">CLIENTS</span></h2>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <div class="row">
+                        <!-- CLIENTS 1 -->
+                        <div class="col-md-6">
+                            <div class="row client-row border-bot">
+                                <div class="col-xs-6 col-lg-6 col-sm-3 text-center bord logo-pad border-right">
+                                    <img src="logos/BT.svg" alt="BT Logo">
+                                </div>
+
+                                <div class="col-xs-6 col-lg-6 col-sm-3 text-center bord logo-pad">
+                                    <img src="logos/green.png" alt="GreenMedSoft Logo">
+                                </div>
+
+                                <div class="col-xs-6 col-lg-6 col-sm-3 text-center logo-pad border-right">
+                                    <img src="logos/imedhas.png" alt="Imedhas Logo">
+                                </div>
+
+                                <div class="col-xs-6 col-lg-6 col-sm-3 text-center logo-pad">
+                                    <img src="logos/Mobisense.webp" alt="Mobisense Logo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="elfsight-app-9ab8824b-0360-41f7-84a8-07502b69fcf4" data-elfsight-app-lazy>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <section class="section-background parallax page-section">
                 <div id="about_sec" class="">
                     <div class="container fes1-cont ">
@@ -1125,7 +535,6 @@
 
                 </div>
             </section>
-            <!--why choose us-->
 
             <!-- DIVIDER -->
             <hr class="mt-0 mb-0">
@@ -1138,15 +547,16 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 for_cont_col_right">
                             <div class="contact_margin">
-                                <a href="#contactus_sec" class="contact_scroll1 cont_act">CONTACT US</a>
+                                <a href="#contact_sec" class="contact_scroll">
+                                    <button class="nav-button">Contact Us</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- FEATURES 4 our services -->
-            <div id="service_sec" class="page-section fes4-cont">
+            <section id="service_sec" class="page-section fes4-cont">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-md-4">
@@ -1323,7 +733,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 
@@ -1336,63 +746,18 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 for_cont_col_right">
                     <div class="contact_margin">
-                        <a href="#contactus_sec" class="contact_scroll1 cont_act">CONTACT US</a>
+                        <a href="#contact_sec" class="contact_scroll">
+                            <button class="nav-button">Contact Us</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- DIVIDER -->
     <hr class="mt-0 mb-0">
 
-    <!-- CLIENTS 1 & TESTIMONIALS 1 -->
-    <div id="clients_sec" class="page-section p-110-cont">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mb-50">
-                        <h2 class="section-title">OUR <span class="bold">CLIENTS</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-
-                <!-- CLIENTS 1 -->
-                <div class="col-md-6">
-                    <div class="row client-row border-bot">
-                        <div class="col-xs-6 col-lg-6 col-sm-3 text-center bord logo-pad border-right">
-                            <img src="logos/BT.svg" alt="" data-aos="fade-right" data-aos-delay="400">
-                        </div>
-
-                        <div class="col-xs-6 col-lg-6 col-sm-3 text-center bord logo-pad">
-                            <img src="logos/Infosys.svg" alt="" data-aos="fade-down" data-aos-delay="600">
-                        </div>
-
-                        <div class="col-xs-6 col-lg-6 col-sm-3 text-center logo-pad border-right">
-                            <img src="logos/Freston Analytics.svg" alt="" data-aos="fade-up"
-                                data-aos-delay="800">
-                        </div>
-
-                        <div class="col-xs-6 col-lg-6 col-sm-3 text-center logo-pad">
-                            <img src="logos/Mobisense.png" alt="" data-aos="fade-left"
-                                data-aos-delay="1000">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- TESTIMONIALS 1 -->
-                <div class="col-md-6">
-                    <div class="elfsight-app-9ab8824b-0360-41f7-84a8-07502b69fcf4" data-elfsight-app-lazy></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <hr class="mt-0 mb-0">
-    <!-- CONTACT INFO SECTION 1 -->
-    <div id="contact_sec" class="page-section p-110-cont">
+    <section id="contact_sec" class="page-section p-110-cont">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6">
@@ -1425,15 +790,14 @@
                         </div>
                         <div class="cis-text">
                             <h3><span class="bold">CALL US</span></h3>
-                            <p><a href="tel:+44 7474 742390">+44 7474 742390</a></p>
+                            <p><a href="tel:01908 101013">01908 101013</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- GOOGLE MAP & CONTACT FORM -->
     <div class="page-section biege-bg" id="contactus_sec">
         <div class="container-fluid">
             <div class="row">
@@ -1496,7 +860,7 @@
 
                                 <div class="row">
                                     <div class="col-md-12 text-center-xxs">
-                                        <input type="submit" value="SEND MESSAGE" class="button medium gray"
+                                        <input type="submit" value="SEND MESSAGE" class="button medium nav-button"
                                             data-loading-text="Loading...">
                                     </div>
                                 </div>
@@ -1553,25 +917,6 @@
         <a href="" id="back-to-top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
 
-    <!--CALL ICONS-->
-    <div id="sy-whatshelp">
-        <div class="sywh-services">
-            <a href="https://api.whatsapp.com/send?phone=447474742390" class="whatsapp" target="_blank">
-                <i class="fab fa-whatsapp" aria-hidden="true"></i>
-
-            </a>
-            <a href="tel:+44 7474 74 2390" class="call">
-                <i class="fa fa-phone"></i>
-            </a>
-        </div>
-        <a class="sywh-open-services">
-            <i class="fa fa-comments"></i>
-            <i class="fa fa-times"></i>
-        </a>
-    </div>
-
-    <!-- JS begin -->
-
     <!-- jQuery  -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -1617,28 +962,10 @@
 
     <!-- Slick Slider JS -->
     <script src="js/plugins/slick.min.js"></script>
-    // <script>
-    //     var swiper = new Swiper('.swiper', {
-    //         loop: true,
-    //         autoplay: false,
-    //         pagination: {
-    //             el: '.swiper-pagination',
-    //             clickable: true,
-    //         },
-    //         navigation: {
-    //             nextEl: '.swiper-button-next',
-    //             prevEl: '.swiper-button-prev',
-    //         },
-    //         autoplay: {
-    //             delay: 5000,
-    //             disableOnInteraction: false,
-    //         },
-    //     });
-    // </script>
 
     <script>
         var swiper = new Swiper('.swiper', {
-            loop: true, 
+            loop: true,
             autoplay: {
                 delay: 7000,
                 disableOnInteraction: false,
@@ -1655,7 +982,6 @@
             effect: 'slide', // Choose an effect for smoother transitions
         });
     </script>
-
 
     <script>
         $(document).ready(function() {
@@ -1747,7 +1073,6 @@
         });
     </script>
 
-
     <script>
         $(document).ready(function() {
             $("a").on('click', function(event) {
@@ -1764,14 +1089,21 @@
 
             $(window).scroll(function() {
                 var scrollDistance = $(window).scrollTop();
-                scrollDistance += 50;
-                $('.page-section').each(function(i) {
-                    if ($(this).position().top <= scrollDistance) {
+
+                // Target all section elements on the page
+                $('section').each(function(i) {
+                    // Get the top offset of the section
+                    var sectionTop = $(this).offset().top;
+
+                    // Check if the scroll position has passed the section's top
+                    if (scrollDistance >= sectionTop - 1) {
                         $('.nav li.current').removeClass('current');
                         $('.nav li').eq(i).addClass('current');
                     }
                 });
             }).scroll();
+
+
         });
     </script>
     <!-- MAIN SCRIPT -->
