@@ -147,9 +147,9 @@
 
                                             <!-- MENU ITEM -->
                                             <li>
-                                                <a href="#contact_sec" class="contact_scroll">
-                                                    <div class="main-menu-title">CONTACT</div>
-                                                </a>
+                                                {{-- <a href="#contact_sec" class="contact_scroll">
+                                                    <div class="main-menu-title"></div>
+                                                </a> --}}
                                             </li>
                                             <li>
                                                 <a href="#contact_sec" class="contact_scroll">
@@ -238,7 +238,7 @@
                                     </div>
                                 </div>
                                 <div class="slider-img col-lg-5">
-                                    <img src="/images/c2.png" alt="Slider Product">
+                                    <img src="/images/newc2.png" alt="Slider Product">
                                 </div>
                                 <div class="filter"></div>
                             </div>
@@ -548,7 +548,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12 for_cont_col_right">
                             <div class="contact_margin">
                                 <a href="#contact_sec" class="contact_scroll">
-                                    <button class="nav-button">Contact Us</button>
+                                    <button class="nav-button">Impress Me!</button>
                                 </a>
                             </div>
                         </div>
@@ -747,7 +747,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 for_cont_col_right">
                     <div class="contact_margin">
                         <a href="#contact_sec" class="contact_scroll">
-                            <button class="nav-button">Contact Us</button>
+                            <button class="nav-button">Impress Me!</button>
                         </a>
                     </div>
                 </div>
