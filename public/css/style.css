@@ -256,8 +256,23 @@ body {
     color: #4b4e53;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-size: 29px;
-    line-height: 35px;
+    line-height: 45px;
     font-weight: 300;
+}
+
+.g-recaptcha{
+    text-align: -webkit-center;
+    /* margin-bottom: 25px;
+    margin-top: -25px; */
+}
+
+.recap_error strong{
+    color: red !important;
+}
+
+.pt-80-b-80-cont{
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .mg-16 {
@@ -3600,7 +3615,7 @@ table.shopping-cart-table tr td {
 
 .cis-text p {
     margin: 0;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 /* #GMAPS 1 #NEW =====================================================*/
@@ -15772,7 +15787,7 @@ button {
 }
 
 .logo-pad {
-    padding: 30px 45px;
+    padding: 30px 15px;
 }
 
 .border-right {
@@ -16112,4 +16127,35 @@ button {
 .slider-newbtn:hover {
     background: #035252;
     box-shadow: #4D4D4D 0px 0px 15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mapboxgl-popup-content{
+    background: #008080 !important;
+    border-radius: 13px !important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
+    border-top-color: #008080 !important;
+}
+
+/* .mapboxgl-popup{
+    transform: translate(-50%, -100%) translate(322px, 307px) !important;
+} */
+
+.mapboxgl-popup-content h4 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.mapboxgl-popup-content p {
+    margin: 0 0 1px 0;
+    font-size: 14px;
+    color: #fff;
 }

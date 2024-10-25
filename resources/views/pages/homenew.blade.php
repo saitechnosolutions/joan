@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Q2QES1EEK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-2Q2QES1EEK');
+    </script>
+
     <title>Joan Technologies</title>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -36,7 +47,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.css">
-
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     <!-- Slick CSS -->
     <link rel="stylesheet" href="/css/slick.css">
 
@@ -98,8 +109,8 @@
                                 @elseif (session()->get('success'))
                                     <div id="successAlert" class="alert alert-success alert-dismissible fade show"
                                         role="alert">
-                                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img"
-                                            aria-label="Success:">
+                                        <svg class="bi flex-shrink-0 me-2" width="24" height="24"
+                                            role="img" aria-label="Success:">
                                             <use xlink:href="#check-circle-fill" />
                                         </svg>
                                         {{ session()->get('success') }}
@@ -341,17 +352,14 @@
                                 <div class="col-xs-6 col-lg-6 col-sm-3 text-center bord logo-pad border-right">
                                     <img src="logos/BT.svg" alt="BT Logo">
                                 </div>
-
                                 <div class="col-xs-6 col-lg-6 col-sm-3 text-center bord logo-pad">
-                                    <img src="logos/green.png" alt="GreenMedSoft Logo">
+                                    <img src="logos/questo.svg" alt="Questo Logo">
                                 </div>
-
                                 <div class="col-xs-6 col-lg-6 col-sm-3 text-center logo-pad border-right">
-                                    <img src="logos/imedhas.png" alt="Imedhas Logo">
+                                    <img src="logos/edge.svg" alt="Edgematics Logo">
                                 </div>
-
                                 <div class="col-xs-6 col-lg-6 col-sm-3 text-center logo-pad">
-                                    <img src="logos/Mobisense.webp" alt="Mobisense Logo">
+                                    <img src="logos/imedhas.png" alt="Imedhas Logo">
                                 </div>
                             </div>
                         </div>
@@ -763,10 +771,10 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="cis-cont">
                         <div class="cis-icon">
-                            <div class="icon icon-basic-map"></div>
+                            <div class="icon icon-basic-geolocalize-01"></div>
                         </div>
                         <div class="cis-text">
-                            <h3><span class="bold">ADDRESS</span></h3>
+                            <h3><span class="bold">HEADQUARTERS - UK</span></h3>
                             <p>314 Midsummer Boulevard, <br>Milton Keynes, <br>England, MK9 2UB
                             </p>
                         </div>
@@ -775,11 +783,13 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="cis-cont">
                         <div class="cis-icon">
-                            <div class="icon icon-basic-mail"></div>
+                            <div class="icon icon-basic-geolocalize-05"></div>
                         </div>
                         <div class="cis-text">
-                            <h3><span class="bold">EMAIL</span></h3>
-                            <p><a href="mailto:hello@joantechnologies.com">hello@joantechnologies.com</a></p>
+                            <h3><span class="bold">BRANCH OFFICE - INDIA</span></h3>
+                            <p>Door No.: 13, Thaneer Pandal, <br>Villankurichi Road, <br>Peelamedu, Coimbatore,
+                                <br>Tamil Nadu, India - 641004
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -790,7 +800,16 @@
                         </div>
                         <div class="cis-text">
                             <h3><span class="bold">CALL US</span></h3>
-                            <p><a href="tel:01908 101013">01908 101013</a></p>
+                            <p><a href="tel:01908 101013">01908 101013</a> (UK)</p>
+                        </div>
+                    </div>
+                    <div class="cis-cont">
+                        <div class="cis-icon">
+                            <div class="icon icon-basic-mail-open-text"></div>
+                        </div>
+                        <div class="cis-text">
+                            <h3><span class="bold">EMAIL</span></h3>
+                            <p><a href="mailto:hello@joantechnologies.com">hello@joantechnologies.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -802,10 +821,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3493.1687895206683!2d-0.7663386259705273!3d52.038918914703274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877aaa244893cc5%3A0x5e71eafb9a33a88d!2sRegus%20-%20Milton%20Keynes%20Midsummer%20Court!5e0!3m2!1sen!2sin!4v1713940533501!5m2!1sen!2sin"
-                        width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div id="map" style="height: 685px;"></div>
                 </div>
 
                 <div class="col-md-6">
@@ -814,7 +831,11 @@
                         <div class="mb-40">
                             <h2 class="section-title">CONTACT <span class="bold">US</span></h2>
                         </div>
+                        {!! NoCaptcha::renderJs() !!}
 
+                        @if ($errors->has('g-recaptcha-response'))
+                            <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                        @endif
                         <!-- CONTACT FORM -->
                         <div class="">
                             <form action="/mail" method="POST" id="contactus-form">
@@ -857,9 +878,9 @@
                                             name="message" id="message" placeholder="MESSAGE" required></textarea>
                                     </div>
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-md-12 text-center-xxs">
+                                {!! NoCaptcha::display() !!}
+                                <div class="row mt-30">
+                                    <div class="col-md-12 text-center text-center-xxs">
                                         <input type="submit" value="SEND MESSAGE" class="button medium nav-button"
                                             data-loading-text="Loading...">
                                     </div>
@@ -883,8 +904,110 @@
         </div>
     </div>
 
+    {{-- <div class="page-section pt-80-b-80-cont biege-bg" id="contactus_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="fes4-box wow fadeInLeft">
+                        <h2 class="section-title">CONTACT <span class="bold">US</span></h2>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8">
+                    <div class="fes4-box wow fadeInDown">
+                        <div class="title-fs-29">
+                            Let's Connect and Create Something Extraordinary
+                            <span class="bold">Together!</span>
+                        </div>
+                        <div class="myline1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="recap_error text-center">
+                {!! NoCaptcha::renderJs() !!}
+                @if ($errors->has('g-recaptcha-response'))
+                    <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                @endif
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="">
+                        <form action="/mail" method="POST" id="contactus-form">
+                            @csrf
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-50">
+                                            <input type="text" value=""
+                                                data-msg-required="Please enter your name" maxlength="100"
+                                                class="controled" name="name" id="name" placeholder="NAME"
+                                                required>
+                                        </div>
+
+                                        <div class="col-md-12 mb-50">
+                                            <input type="email" value=""
+                                                data-msg-required="Please enter your email address"
+                                                data-msg-email="Please enter a valid email address" maxlength="100"
+                                                class="controled" name="email" id="email" placeholder="EMAIL"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-50">
+                                            <input type="text" value=""
+                                                data-msg-required="Please enter your Contact Number"
+                                                data-msg-email="Please enter a valid contact Number" maxlength="15"
+                                                class="controled" name="Contact" id="contact"
+                                                placeholder="CONTACT" required>
+                                        </div>
+
+                                        <div class="col-md-12 mb-50">
+                                            <textarea maxlength="5000" data-msg-required="Please enter your message" rows="1" class="controled"
+                                                name="message" id="message" placeholder="MESSAGE" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-20">
+                                <div class="col-md-12 text-center text-center-xxs">
+                                    {!! NoCaptcha::display() !!}
+                                    <input type="submit" value="SEND MESSAGE" class="button medium nav-button"
+                                        data-loading-text="Loading...">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="alert alert-success hidden animated fadeIn" id="contactSuccess">
+                            <strong>Success!</strong> Your message has been sent to us.
+                        </div>
+
+                        <div class="alert alert-danger hidden animated shake" id="contactError">
+                            <strong>Error!</strong> There was an error sending your message.
+                        </div>
+
+                        <div id="message-dialog" title="Message Sent">
+                            <p>Your message has been sent successfully!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> --}}
+
+    {{-- <div class="map-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div id="map" style="height: 450px;"></div>
+                </div>
+            </div>
+        </div>
+    </div> --}}
+
     <!-- FOOTER 1 -->
-    <footer class="page-section text-center ">
+    <footer class="page-section text-center">
         <div class="container">
             <div class="pt-55-b-50-cont">
                 <div class="row foot-row">
@@ -932,6 +1055,113 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.js"></script>
 
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
+    <script>
+        mapboxgl.accessToken =
+            'pk.eyJ1IjoicGF2aXRocmFuNTYiLCJhIjoiY2xoZnUzaWhnMHZ2bjNxbzRweTk5bmdxNyJ9.qLY-Opstp2m3YyZAgDRPnQ';
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v10', // Black and white map style
+            zoom: 2 // Initial zoom level to show both markers
+        });
+
+        // Custom Marker 1: Milton Keynes with GIF
+        var el1 = document.createElement('div');
+        el1.className = 'custom-marker';
+        el1.style.backgroundImage = 'url(/images/mapgif.gif)'; // Replace with your GIF URL
+        el1.style.width = '50px'; // Set width of the GIF marker
+        el1.style.height = '50px'; // Set height of the GIF marker
+        el1.style.backgroundSize = '100%'; // Ensure the GIF fits properly
+
+        var popup1 = new mapboxgl.Popup({
+                offset: 25
+            })
+            .setLngLat([-0.7575, 52.0416]) // Popup attached to Milton Keynes coordinates
+            .setHTML(
+                '<h4>Joan Technologies Ltd</h4><p>314 Midsummer Boulevard,</p><p>Milton Keynes,</p><p>England, MK9 2UB</p>'
+                );
+
+        var marker1 = new mapboxgl.Marker({
+                element: el1,
+                anchor: 'bottom' // Aligns the bottom of the GIF with the location point
+            })
+            .setLngLat([-0.7575, 52.0416]) // Milton Keynes coordinates
+            .addTo(map);
+
+        // Show popup on hover
+        marker1.getElement().addEventListener('mouseenter', () => {
+            popup1.addTo(map);
+        });
+
+        marker1.getElement().addEventListener('mouseleave', () => {
+            popup1.remove();
+        });
+
+        // Custom Marker 2: Coimbatore with GIF
+        var el2 = document.createElement('div');
+        el2.className = 'custom-marker';
+        el2.style.backgroundImage = 'url(/images/mapgif.gif)'; // Replace with your GIF URL
+        el2.style.width = '50px';
+        el2.style.height = '50px';
+        el2.style.backgroundSize = '100%';
+
+        var popup2 = new mapboxgl.Popup({
+                offset: 25
+            })
+            .setLngLat([77.0131, 11.0246]) // Popup attached to Coimbatore coordinates
+            .setHTML(
+                '<h4>Joan Technologies Ltd</h4><p>Door No.: 13, Thaneer Pandal,</p><p>Villankurichi Road,</p><p>Peelamedu, Coimbatore, <br> Tamil Nadu, India - 641004</p>'
+                );
+
+        var marker2 = new mapboxgl.Marker({
+                element: el2,
+                anchor: 'bottom' // Aligns the bottom of the GIF with the location point
+            })
+            .setLngLat([77.0131, 11.0246]) // Coimbatore coordinates
+            .addTo(map);
+
+        // Show popup on hover
+        marker2.getElement().addEventListener('mouseenter', () => {
+            popup2.addTo(map);
+        });
+
+        marker2.getElement().addEventListener('mouseleave', () => {
+            popup2.remove();
+        });
+
+        // Automatically adjust zoom and center to fit both markers
+        var bounds = new mapboxgl.LngLatBounds();
+        bounds.extend([-0.7575, 52.0416]); // Milton Keynes coordinates
+        bounds.extend([77.0131, 11.0246]); // Coimbatore coordinates
+
+        map.fitBounds(bounds, {
+            padding: 50, // Add some padding around the markers
+            maxZoom: 2 // Prevent the zoom from being too close
+        });
+    </script>
+
+
+
+    <style>
+        .custom-marker {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+
+
+    <style>
+        .custom-marker {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+
+
+
+
 
     <!-- PORTFOLIO SCRIPTS -->
     {{-- <script src="js/isotope.pkgd.min.js"></script> --}}
@@ -943,6 +1173,7 @@
 
     <!-- APPEAR -->
     <script src="js/jquery.appear.js"></script>
+    {{-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/47660501.js"></script> --}}
 
     <!-- OWL CAROUSEL -->
     <script src="js/owl.carousel.min.js"></script>
