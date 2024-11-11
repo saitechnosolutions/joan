@@ -20,7 +20,7 @@
     <meta name="description" content="JOAN TECHNOLOGIES">
     <meta name="author" content="11soft">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- FAVICONS -->
     <link rel="shortcut icon" href="joan/joan_fav.png">
@@ -820,7 +820,7 @@
     <div class="page-section biege-bg" id="contactus_sec">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" style="padding: 0">
 
                     <div id="map" style="height: 685px;"></div>
                 </div>
@@ -904,133 +904,68 @@
         </div>
     </div>
 
-    {{-- <div class="page-section pt-80-b-80-cont biege-bg" id="contactus_sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="fes4-box wow fadeInLeft">
-                        <h2 class="section-title">CONTACT <span class="bold">US</span></h2>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-8 col-md-8">
-                    <div class="fes4-box wow fadeInDown">
-                        <div class="title-fs-29">
-                            Let's Connect and Create Something Extraordinary
-                            <span class="bold">Together!</span>
-                        </div>
-                        <div class="myline1"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="recap_error text-center">
-                {!! NoCaptcha::renderJs() !!}
-                @if ($errors->has('g-recaptcha-response'))
-                    <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
-                @endif
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="">
-                        <form action="/mail" method="POST" id="contactus-form">
-                            @csrf
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-12 mb-50">
-                                            <input type="text" value=""
-                                                data-msg-required="Please enter your name" maxlength="100"
-                                                class="controled" name="name" id="name" placeholder="NAME"
-                                                required>
-                                        </div>
-
-                                        <div class="col-md-12 mb-50">
-                                            <input type="email" value=""
-                                                data-msg-required="Please enter your email address"
-                                                data-msg-email="Please enter a valid email address" maxlength="100"
-                                                class="controled" name="email" id="email" placeholder="EMAIL"
-                                                required>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-12 mb-50">
-                                            <input type="text" value=""
-                                                data-msg-required="Please enter your Contact Number"
-                                                data-msg-email="Please enter a valid contact Number" maxlength="15"
-                                                class="controled" name="Contact" id="contact"
-                                                placeholder="CONTACT" required>
-                                        </div>
-
-                                        <div class="col-md-12 mb-50">
-                                            <textarea maxlength="5000" data-msg-required="Please enter your message" rows="1" class="controled"
-                                                name="message" id="message" placeholder="MESSAGE" required></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mt-20">
-                                <div class="col-md-12 text-center text-center-xxs">
-                                    {!! NoCaptcha::display() !!}
-                                    <input type="submit" value="SEND MESSAGE" class="button medium nav-button"
-                                        data-loading-text="Loading...">
-                                </div>
-                            </div>
-                        </form>
-                        <div class="alert alert-success hidden animated fadeIn" id="contactSuccess">
-                            <strong>Success!</strong> Your message has been sent to us.
-                        </div>
-
-                        <div class="alert alert-danger hidden animated shake" id="contactError">
-                            <strong>Error!</strong> There was an error sending your message.
-                        </div>
-
-                        <div id="message-dialog" title="Message Sent">
-                            <p>Your message has been sent successfully!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
-    {{-- <div class="map-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div id="map" style="height: 450px;"></div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
-    <!-- FOOTER 1 -->
-    <footer class="page-section text-center">
+    <footer class="footer page-section">
         <div class="container">
             <div class="pt-55-b-50-cont">
-                <div class="row foot-row">
-                    <div class="col-lg-4"></div>
-                    <div class="col-lg-4">
-                        <!-- Social Links -->
-                        <div class="footer-soc-a">
-                            <a href="https://www.linkedin.com/company/joantechnologies" title="LinkedIn+"
-                                target="_blank"><i class="fa fa-linkedin"></i></a>
+                <div class="ddd">
+                    <div class="dd1">
+                        <h6 class="supp_head">SUPPORT</h6>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/pdf/modern.pdf" target="_blank" class="SMN_effect-4">Modern Slavery
+                                    Statement</a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/pdf/cookie.pdf" target="_blank" class="SMN_effect-4">Cookie Policy</a>
+                            </div>
                         </div>
-                        <!-- Copyright -->
-                        <div class="footer-copy ">
-                            <a href="/">&copy; Joan Technologies Ltd.</a>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/pdf/corporate.pdf" target="_blank" class="SMN_effect-4">Corporate
+                                    Social Responsibility</a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/pdf/privacy.pdf" target="_blank" class="SMN_effect-4">Privacy
+                                    Statement</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/pdf/health.pdf" target="_blank" class="SMN_effect-4">Health And Safety
+                                    Policy</a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/pdf/terms.pdf" target="_blank" class="SMN_effect-4">Terms of Use</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/pdf/diversity.pdf" target="_blank" class="SMN_effect-4">Diversity,
+                                    Equity, Inclusion</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+
+                    <div class="dd2">
                         <div class="foot-review">
                             <div class="elfsight-app-4c9fddc0-50eb-4265-96f2-7896317ddcc7 all-review"
                                 data-elfsight-app-lazy></div>
                         </div>
                     </div>
                 </div>
-
+            </div>
+        </div>
+        <div class="copy_section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copy_flex">
+                        <p class="footer-text">Copyright &copy; <span id="current-year"></span> Joan Technologies Ltd.</p>
+                    <div class="footer-soc-a">
+                        <a href="https://www.linkedin.com/company/joantechnologies" title="LinkedIn+"
+                        target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -1058,78 +993,50 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
 
     <script>
+        $(document).ready(function() {
+            $('#current-year').text(new Date().getFullYear());
+        });
+    </script>
+
+    <script>
         mapboxgl.accessToken =
             'pk.eyJ1IjoicGF2aXRocmFuNTYiLCJhIjoiY2xoZnUzaWhnMHZ2bjNxbzRweTk5bmdxNyJ9.qLY-Opstp2m3YyZAgDRPnQ';
 
         var map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/light-v10', // Black and white map style
-            zoom: 2 // Initial zoom level to show both markers
+            style: 'mapbox://styles/mapbox/light-v10',
+            zoom: 2
         });
-
-        // Custom Marker 1: Milton Keynes with GIF
-        var el1 = document.createElement('div');
-        el1.className = 'custom-marker';
-        el1.style.backgroundImage = 'url(/images/mapgif.gif)'; // Replace with your GIF URL
-        el1.style.width = '50px'; // Set width of the GIF marker
-        el1.style.height = '50px'; // Set height of the GIF marker
-        el1.style.backgroundSize = '100%'; // Ensure the GIF fits properly
 
         var popup1 = new mapboxgl.Popup({
                 offset: 25
             })
-            .setLngLat([-0.7575, 52.0416]) // Popup attached to Milton Keynes coordinates
             .setHTML(
                 '<h4>Joan Technologies Ltd</h4><p>314 Midsummer Boulevard,</p><p>Milton Keynes,</p><p>England, MK9 2UB</p>'
                 );
 
         var marker1 = new mapboxgl.Marker({
-                element: el1,
-                anchor: 'bottom' // Aligns the bottom of the GIF with the location point
+                color: '#008080', // Set the color to #008080
+                anchor: 'bottom'
             })
-            .setLngLat([-0.7575, 52.0416]) // Milton Keynes coordinates
+            .setLngLat([-0.7575, 52.0416])
+            .setPopup(popup1) // Set the popup to the marker
             .addTo(map);
-
-        // Show popup on hover
-        marker1.getElement().addEventListener('mouseenter', () => {
-            popup1.addTo(map);
-        });
-
-        marker1.getElement().addEventListener('mouseleave', () => {
-            popup1.remove();
-        });
-
-        // Custom Marker 2: Coimbatore with GIF
-        var el2 = document.createElement('div');
-        el2.className = 'custom-marker';
-        el2.style.backgroundImage = 'url(/images/mapgif.gif)'; // Replace with your GIF URL
-        el2.style.width = '50px';
-        el2.style.height = '50px';
-        el2.style.backgroundSize = '100%';
 
         var popup2 = new mapboxgl.Popup({
                 offset: 25
             })
-            .setLngLat([77.0131, 11.0246]) // Popup attached to Coimbatore coordinates
             .setHTML(
                 '<h4>Joan Technologies Ltd</h4><p>Door No.: 13, Thaneer Pandal,</p><p>Villankurichi Road,</p><p>Peelamedu, Coimbatore, <br> Tamil Nadu, India - 641004</p>'
                 );
 
         var marker2 = new mapboxgl.Marker({
-                element: el2,
-                anchor: 'bottom' // Aligns the bottom of the GIF with the location point
+                color: '#008080', // Set the color to #008080
+                anchor: 'bottom'
             })
-            .setLngLat([77.0131, 11.0246]) // Coimbatore coordinates
+            .setLngLat([77.0131, 11.0246])
+            .setPopup(popup2) // Set the popup to the marker
             .addTo(map);
-
-        // Show popup on hover
-        marker2.getElement().addEventListener('mouseenter', () => {
-            popup2.addTo(map);
-        });
-
-        marker2.getElement().addEventListener('mouseleave', () => {
-            popup2.remove();
-        });
 
         // Automatically adjust zoom and center to fit both markers
         var bounds = new mapboxgl.LngLatBounds();
@@ -1137,12 +1044,10 @@
         bounds.extend([77.0131, 11.0246]); // Coimbatore coordinates
 
         map.fitBounds(bounds, {
-            padding: 50, // Add some padding around the markers
-            maxZoom: 2 // Prevent the zoom from being too close
+            padding: 50,
+            maxZoom: 2
         });
     </script>
-
-
 
     <style>
         .custom-marker {
