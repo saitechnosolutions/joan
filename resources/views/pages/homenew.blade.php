@@ -1028,27 +1028,28 @@
                 offset: 25
             })
             .setHTML(
-                '<h4>Joan Technologies Ltd</h4><p>Door No.: 13, Thaneer Pandal,</p><p>Villankurichi Road,</p><p>Peelamedu, Coimbatore, <br> Tamil Nadu, India - 641004</p>'
+                '<h4>Joan Technologies Ltd</h4><p>No.: 6, 1st Floor, KCP Garden,</p> <p>Behind PPG Institute of Technology,</p><p>Vilankurichi Road, Saravanampatti, <br> Coimbatore - 641035.</p>'
             );
 
         var marker2 = new mapboxgl.Marker({
                 color: '#008080', // Set the color to #008080
                 anchor: 'bottom'
             })
-            .setLngLat([77.0131, 11.0246])
+            .setLngLat([77.0111, 11.0752]) // Updated coordinates for Coimbatore
             .setPopup(popup2) // Set the popup to the marker
             .addTo(map);
 
         // Automatically adjust zoom and center to fit both markers
         var bounds = new mapboxgl.LngLatBounds();
         bounds.extend([-0.7575, 52.0416]); // Milton Keynes coordinates
-        bounds.extend([77.0131, 11.0246]); // Coimbatore coordinates
+        bounds.extend([77.0111, 11.0752]); // Coimbatore coordinates
 
         map.fitBounds(bounds, {
             padding: 50,
             maxZoom: 2
         });
     </script>
+
 
     <style>
         .custom-marker {
