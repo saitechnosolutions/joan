@@ -787,8 +787,8 @@
                         </div>
                         <div class="cis-text">
                             <h3><span class="bold">BRANCH OFFICE - INDIA</span></h3>
-                            <p>Door No.: 13, Thaneer Pandal, <br>Villankurichi Road, <br>Peelamedu, Coimbatore,
-                                <br>Tamil Nadu, India - 641004
+                            <p>No.: 6, 1st Floor, KCP Garden, <br>Behind PPG Institute of Technology, <br>Vilankurichi
+                                Road, Saravanampatti, <br>Coimbatore - 641035.
                             </p>
                         </div>
                     </div>
@@ -959,11 +959,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="copy_flex">
-                        <p class="footer-text">Copyright &copy; <span id="current-year"></span> Joan Technologies Ltd.</p>
-                    <div class="footer-soc-a">
-                        <a href="https://www.linkedin.com/company/joantechnologies" title="LinkedIn+"
-                        target="_blank"><i class="fa fa-linkedin"></i></a>
-                    </div>
+                        <p class="footer-text">Copyright &copy; <span id="current-year"></span> Joan Technologies Ltd.
+                        </p>
+                        <div class="footer-soc-a">
+                            <a href="https://www.linkedin.com/company/joantechnologies" title="LinkedIn+"
+                                target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1013,7 +1014,7 @@
             })
             .setHTML(
                 '<h4>Joan Technologies Ltd</h4><p>314 Midsummer Boulevard,</p><p>Milton Keynes,</p><p>England, MK9 2UB</p>'
-                );
+            );
 
         var marker1 = new mapboxgl.Marker({
                 color: '#008080', // Set the color to #008080
@@ -1028,7 +1029,7 @@
             })
             .setHTML(
                 '<h4>Joan Technologies Ltd</h4><p>Door No.: 13, Thaneer Pandal,</p><p>Villankurichi Road,</p><p>Peelamedu, Coimbatore, <br> Tamil Nadu, India - 641004</p>'
-                );
+            );
 
         var marker2 = new mapboxgl.Marker({
                 color: '#008080', // Set the color to #008080
